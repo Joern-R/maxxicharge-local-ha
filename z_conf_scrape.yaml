@@ -6,7 +6,7 @@
 # Hinweise
 # 1. Es werden nicht alle im UI vorhandenen Konfigurationsfelder ausgelesen, sondern nur die Wertfelder
 #    die direkt für den Betrieb relevant sind und dabei auch geändert werden. 
-#     Weitere Felder kann man vermutlich in gleicher/ähnlicher Weise extrahieren.
+#     Weitere Felder kann man vermutlich in gleicher/ähnlicher Weise extrahieren. (ungetestet)
 #######################################################################################################
 
 # Diese Konfigurationsdatei muss per "include" Befehl in die "Configuration.YAML" eingebunden werden.
