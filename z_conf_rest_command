@@ -13,7 +13,7 @@
 #######################################################################################################
 
 # Diese Konfigurationsdatei muss per "include" Befehl in die "Configuration.YAML" eingebunden werden.
-# Wer weitere "scrape" Konfigurationen in HA verwendet, muss diese Konfigurationen nach seinem eigenen
+# Wer weitere "rest_command" Konfigurationen in HA verwendet, muss diese Konfigurationen nach seinem eigenen
 # Bedarf zusammenführen.
 
 # Rest POST Kommandos für Wertänderungen über das lokale Maxxicharge UI (used in Automations)
