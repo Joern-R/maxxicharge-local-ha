@@ -1,0 +1,13 @@
+# Rest POST Commands for Maxxicharge Lokal UI/API (used in Automations)
+# ------------------------------------------------------------------------------
+maxxicharge_maximale_leistung:
+  url: "http://maxxi.local/config?maxOutputPower={{ wert }}"
+
+maxxicharge_offline_leistung:
+  url: "http://maxxi.local/config?offlinePower={{ wert }}"
+
+maxxicharge_maximaler_soc:
+  url: "http://maxxi.local/config?maxSOC={{ wert }}"
+
+maxxicharge_minimaler_soc:
+  url: "http://maxxi.local/config?minSOC={{ wert }}"
