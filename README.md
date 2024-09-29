@@ -77,5 +77,5 @@ Verbesserungsverschläge / Tipps sind natürlich willkommen. Diese dann entweder
 
 **Hinweis:**
 Technische Details zum den einzelnen Funktionen und zur Konfiguration sind als Kommentare im YAML eingefügt.
-Grundsätzliches Wissen über HomeAssistant und die "configuration.yaml" dort setze ich allerdings voraus.
+Grundsätzliches Wissen über HomeAssistant und die "configuration.yaml" setze ich allerdings voraus.
 Wenn die fehlen, bitte selbst danach suchen - es gibt viele Videos, Foren,.. und auch viel in Deutsch.
