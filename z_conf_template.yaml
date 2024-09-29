@@ -7,11 +7,19 @@
 # 1. Die unten verwendete WebHook ID ist ein Beispiel und kann beliebig geändert werden die API-Route,
 #    mit der Id wäre dann "http://homeassistant.local:8123/api/webhook/maxxicharge_local_id" wenn Ihr
 #    den URL eures Homeassistant System nicht geändert habt, ansonsten ist dies entsprechend anzupassen.
-# 2. Die Namen der Sensoren können natürlich an beliebig angepasst werden. Jeder hat da andere 
+# 2. In der Homeassistant Dokumentation wird für den WebHook Namen grundsätzlich eine nicht leicht
+#    zu erratenden Buchstaben/Zahlenkombination empfohlen. Hier im Beispiel wurde aus Gründen besserer
+#    Lesbarkeit eine einfacher Name gewählt 
+# 3. Die Namen der Sensoren können natürlich an beliebig angepasst werden. Jeder hat da andere 
 #    Präferenzen
-# 3. Es werden der Detail Ladestand für genau 1 Batterie ausgelesen. Wer mehr MaxxiCharge Batterien
+# 4. Es wird der Detail Ladestand für genau 1 Batterie ausgelesen. Wer mehr MaxxiCharge Batterien
 #    im Einsatz hat muss entsprechend weitere Sensoren ergänzen
+#
 #######################################################################################################
+
+# Diese Konfigurationsdatei muss per "include" Befehl in die "Configuration.YAML" eingebunden werden.
+# Wer weitere "template" Konfigurationen in HA verwendet, muss die Konfigurationen nach seinem eigenen
+# Bedarf zusammenführen.
 
 
 - trigger:
