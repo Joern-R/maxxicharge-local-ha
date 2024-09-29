@@ -69,7 +69,9 @@ Zusicherung von bestimmten Eigenschaften und Funktionalitäten, sowie ohne Gewä
 
 Ich bin selbst relativ neu mit dem Homeassistant SmartHome System unterwegs. Die Realisierung der Anbindung
 ist daher möglicherweise nicht konform zu Homeassistant "Best Practices". Weiterhin nutze ich nur Standardkonfigurationsmethoden.
-Eine möglicherweise elegantere Lösung mittels HACS und ohne Änderung der Configuration.YAML ist hier nicht möglich.
+Eine möglicherweise elegantere Lösung mittels HACS und ohne Änderung der Configuration.YAML war mir 
+bisher nicht möglich. Wenn jemand eine HACS basierte Integration realisieren möchte, bin ich durchaus
+daran interessiert dort unterstützend/lernend mitzuarbeiten.
 
 Verbesserungsverschläge / Tipps sind natürlich willkommen. Diese dann entweder per PR oder als GitHub Issue.
 
