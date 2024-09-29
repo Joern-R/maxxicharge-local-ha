@@ -20,6 +20,12 @@ Die Maxxicharge Betriebsdaten werden von dem lokalen API in kurzen Abständen pe
 in der lokalen Konfiguration hinterlegte API-Route gesendet. Format und Inhalt findet sich in der 
 Maxxisun Dokumentation und wird hier nicht wiederholt. 
 
+Zugehörige Dateien mit weiterer Dokumentation:
+
+- configuration.yaml
+- z_conf_template.yaml
+
+
 # 2. Auslesen der aktuellen Maxxicharge Konfiguration (Inoffiziell)
 
 Für die aktuelle Konfiguration des Maxxicharge Systems wird derzeit von Maxxisun keine offizielle
@@ -33,6 +39,11 @@ um an die gewünschten Daten zu kommen.
 installiert wird, kann sich die lokale Webseite ändert und die Scraping Funktion damit unbrauchbar
 werden.
 
+Zugehörige Dateien mit weiterer Dokumentation:
+
+- configuration.yaml
+- z_conf_scrape.yaml
+
 # 3. Ändern der aktuellen Maxxicharge Konfiguration (Inoffiziell)
 
 Auch für das Ändern der Maxxicharge Konfiguration wird derzeit von Maxxisun keine offizielle
@@ -42,6 +53,11 @@ Aufrufe mit entsprechenden Query Parametern lokal ändern.
 **Wichtig:** Auch dies ist keine offizielle Schnittstelle und die Technik der http://maxxi.local
 Webseite kann sich in zukünfigten CCU Firmwareversionen so ändern, dass der Ansatz nicht mehr
 funktioniert.
+
+Zugehörige Dateien mit weiterer Dokumentation:
+
+- configuration.yaml
+- z_conf_rest_command.yaml
 
 
 # Allgemeines
