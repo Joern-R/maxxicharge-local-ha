@@ -1,0 +1,87 @@
+######################################################################################################
+# Maxxicharge Lokales API - FW Release 0.41Beta
+######################################################################################################
+
+######################################################################################################
+# Hinweise
+# 1. Die unten verwendete WebHook ID ist ein Beispiel und kann beliebig geändert werden die API-Route,
+#    mit der Id wäre dann "http://homeassistant.local:8123/api/webhook/maxxicharge_local_id" wenn Ihr
+#    den URL eures Homeassistant System nicht geändert habt, ansonsten ist dies entsprechend anzupassen.
+# 2. Die Namen der Sensoren können natürlich an beliebig angepasst werden. Jeder hat da andere 
+#    Präferenzen
+# 3. Es werden der Detail Ladestand für genau 1 Batterie ausgelesen. Wer mehr MaxxiCharge Batterien
+#    im Einsatz hat muss entsprechend weitere Sensoren ergänzen
+#######################################################################################################
+
+
+- trigger:
+    - platform: webhook
+      webhook_id: maxxicharge_local_id
+      allowed_methods: [POST]
+      local_only: true
+  sensor:
+    # Device ID / Name - does not change
+    - name: "MaxxiCharge1_DeviceId"
+      unique_id: "MaxxiCharge1_DeviceId"
+      icon: mdi:information-outline
+      state: "{{ trigger.json.deviceId }}"
+    # WIFI signal strength
+    - name: "MaxxiCharge1 WiFi Signalstärke dBm"
+      unique_id: "MaxxiCharge1-WiFi-dBm"
+      device_class: signal_strength
+      state_class: measurement
+      icon: mdi:wifi
+      state: "{{ trigger.json.wifiStrength }}"
+      unit_of_measurement: dBm
+    # Power delivered by MaxxiCharge to the circut
+    - name: "MaxxiCharge1 CCU Leistung"
+      unique_id: "MaxxiCharge1-CCU_Gesamtleistung"
+      device_class: power
+      state_class: measurement
+      icon: mdi:power-plug-battery-outline
+      state: "{{ trigger.json.Pccu | float (0) | round(3) }}"
+      unit_of_measurement: W
+    # Power meter reading by MaxxiCharge
+    - name: "MaxxiCharge1 E-Zaehler Leistungswert"
+      unique_id: "MaxxiCharge1-E-Leistung"
+      device_class: power
+      state_class: measurement
+      icon: mdi:gauge
+      state: "{{ trigger.json.Pr | float(0) | round (3) }}"
+      unit_of_measurement: W
+    # Total solar power delivered to the MaxxiCharge
+    - name: "MaxxiCharge1 PV Leistung"
+      unique_id: "MaxxiCharge1-PV_Leistung"
+      device_class: power
+      state_class: measurement
+      icon: mdi:solar-power-variant
+      state: "{{ trigger.json.PV_power_total  | float(0) | round (3) }}"
+      unit_of_measurement: W
+    # Firmware version of MaxxiCharge
+    - name: "MaxxiCharge1 CCU Version"
+      unique_id: "MaxxiCharge1_CCU_Version"
+      icon: mdi:information-outline
+      state: "{{ trigger.json.firmwareVersion }}"
+    # Solar power used to charge battery
+    - name: "MaxxiCharge1 Batterie Leistung"
+      unique_id: "MaxxiCharge1-Batterie_Leistung"
+      state: "{{  (trigger.json.PV_power_total | float (0) | round(3) - trigger.json.Pccu | float (0) | round(3)) | round(3) }}"
+      unit_of_measurement: W
+      device_class: power
+      state_class: measurement
+      icon: mdi:battery-charging-outline
+    # Battery state of charge in %
+    - name: "MaxxiCharge1 Ladestand %"
+      unique_id: "MaxxiCharge1-Ladestand"
+      device_class: battery
+      state_class: measurement
+      icon: >
+        mdi:battery-{{ (trigger.json.SOC | int(0) / 10) | round(0, 0, 0) * 10 }}
+      state: "{{ trigger.json.SOC }}"
+      unit_of_measurement: "%"
+    # Battery state of chargen in Wh
+    - name: "MaxxiCharge1 Ladestand Detail"
+      unique_id: "MaxxiCharge1-LadestandDetail"
+      icon: mdi:file-document-outline
+      unit_of_measurement: "Wh"
+      state: "{{ trigger.json.batteriesInfo[0].batteryCapacity | float (0) | round(3)}}"
