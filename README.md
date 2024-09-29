@@ -1,4 +1,4 @@
-# maxxcharge-local-ha
+# maxxicharge-local-ha
 Beispiel für die Integration des lokalen Maxxicharge API mit Homeassistant
 
 # Ziel
@@ -8,7 +8,7 @@ zur Auswertung von "irgendwelchen" Sensordaten, aber insbesondere mit dem "Energ
 eine einfache Möglichkeit den Energiefluß zwischen Netzanschluß, Solaranlage und Speicher zu
 visualisieren und statistisch auszuwerten.
 
-Ab Firmware Release 0.41beta bietet Maxxicharge eine vollständig vom Maxxisun Cloudservice unabhängige Schnittstelle
+Ab CCU Firmware Release 0.41beta bietet Maxxicharge eine vollständig vom Maxxisun Cloudservice unabhängige Schnittstelle
 zum "Auslesen" der Betriebsdaten des Maxxicharge per WebHook an. Die entsprechende Maxxisun Dokumentation
 findet sich hier: https://maxxisun.app/cloud
 
