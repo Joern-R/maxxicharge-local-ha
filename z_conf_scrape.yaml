@@ -1,0 +1,57 @@
+
+
+
+
+- resource: http://maxxi.local
+  scan_interval: 60
+  sensor:
+    - name: "MaxxiCharge1 Konfiguration Lokal - Maximale Leistung"
+      unique_id: "MaxxiCharge1_Konf_Lok_Max_Leistung"
+      select: "input"
+      index: 0
+      attribute: value
+      unit_of_measurement: "W"
+      device_class: power
+      icon: mdi:meter-electric
+    - name: "MaxxiCharge1 Konfiguration Lokal - Offline Leistung"
+      unique_id: "MaxxiCharge1_Konf_Lok_Offline_Leistung"
+      select: "input"
+      index: 1
+      attribute: value
+      unit_of_measurement: "W"
+      device_class: power
+      icon: mdi:transmission-tower-off
+    - name: "MaxxiCharge1 Konfiguration Lokal - Ausgabekorrektur"
+      unique_id: "MaxxiCharge1_Konf_Lok_Ausgabekorrektur"
+      select: "input"
+      index: 3
+      attribute: value
+      unit_of_measurement: "W"
+      device_class: power
+      icon: mdi:delta
+    - name: "MaxxiCharge1 Konfiguration Lokal - Reaktionstoleranz"
+      unique_id: "MaxxiCharge1_Konf_Lok_Reak_Toleranz"
+      select: "input"
+      index: 4
+      attribute: value
+      unit_of_measurement: "W"
+      device_class: power
+      icon: mdi:vector-difference
+    - name: "MaxxiCharge1 Konfiguration Lokal - Minimale Ladung"
+      unique_id: "MaxxiCharge1_Konf_Lok_Min_SoC"
+      select: "input"
+      index: 5
+      attribute: value
+      unit_of_measurement: "%"
+      device_class: battery
+      state_class: measurement
+      icon: mdi:battery
+    - name: "MaxxiCharge1 Konfiguration Lokal - Maximale Ladung"
+      unique_id: "MaxxiCharge1_Konf_Lok_Max_SoC"
+      select: "input"
+      index: 6
+      attribute: value
+      unit_of_measurement: "%"
+      device_class: battery
+      state_class: measurement
+      icon: mdi:battery
