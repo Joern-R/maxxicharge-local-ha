@@ -1,6 +1,17 @@
+######################################################################################################
+# Maxxicharge Lokale Konfiguration aus http://maxxi.local UI extrahieren - FW Release 0.41Beta
+######################################################################################################
 
+######################################################################################################
+# Hinweise
+# 1. Es werden nicht alle im UI vorhandenen Konfigurationsfelder ausgelesen, sondern nur die Wertfelder
+#    die direkt für den Betrieb relevant sind und dabei auch geändert werden. 
+#     Weitere Felder kann man vermutlich in gleicher/ähnlicher Weise extrahieren.
+#######################################################################################################
 
-
+# Diese Konfigurationsdatei muss per "include" Befehl in die "Configuration.YAML" eingebunden werden.
+# Wer weitere "scrape" Konfigurationen in HA verwendet, muss diese Konfigurationen nach seinem eigenen
+# Bedarf zusammenführen.
 
 - resource: http://maxxi.local
   scan_interval: 60
