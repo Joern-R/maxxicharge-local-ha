@@ -14,3 +14,5 @@ scrape: !include z_conf_scrape.yaml
 ################################################################################################
 # 3. Konfiguration für das Ändern Maxxicharge Konfiguration mittels des lokalen UI (Inoffiziell)
 
+rest_command: !include z_conf_rest_command.yaml
+
