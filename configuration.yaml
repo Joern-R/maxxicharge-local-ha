@@ -9,6 +9,7 @@ template: !include z_conf_template.yaml
 ################################################################################################
 # 2. Konfiguration für das Auslesen der Maxxicharge Konfiguration aus dem lokalen UI (Inoffiziell)
 
+scrape: !include z_conf_scrape.yaml
 
 ################################################################################################
 # 3. Konfiguration für das Ändern Maxxicharge Konfiguration mittels des lokalen UI (Inoffiziell)
