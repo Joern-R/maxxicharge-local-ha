@@ -63,6 +63,10 @@ Zugehörige Dateien mit weiterer Dokumentation:
 # Allgemeines
 
 **Disclaimer:**
+
+Die Nutzung der Konfiguration erfolgt auf eigene Verantwortung und ohne die implizite oder explizite
+Zusicherung von bestimmten Eigenschaften und Funktionalitäten, sowie ohne Gewähr und Support.
+
 Ich bin selbst relativ neu mit dem Homeassistant SmartHome System unterwegs. Die Realisierung der Anbindung
 ist daher möglicherweise nicht konform zu Homeassistant "Best Practices". Weiterhin nutze ich nur Standardkonfigurationsmethoden.
 Eine möglicherweise elegantere Lösung mittels HACS und ohne Änderung der Configuration.YAML ist hier nicht möglich.
