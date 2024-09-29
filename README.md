@@ -14,7 +14,7 @@ findet sich hier: https://maxxisun.app/cloud
 
 Die hier dokumentierte Integration gliedert sich in 3 Teile:
 
-# 1. Lokale Integration der Maxxicharge Betriebsdaten (Offiziell)
+## 1. Lokale Integration der Maxxicharge Betriebsdaten (Offiziell)
 
 Die Maxxicharge Betriebsdaten werden von dem lokalen API in kurzen Abständen per REST Post an die
 in der lokalen Konfiguration hinterlegte API-Route gesendet. Format und Inhalt findet sich in der 
@@ -26,7 +26,7 @@ Zugehörige Dateien mit weiterer Dokumentation:
 - z_conf_template.yaml
 
 
-# 2. Auslesen der aktuellen Maxxicharge Konfiguration (Inoffiziell)
+## 2. Auslesen der aktuellen Maxxicharge Konfiguration (Inoffiziell)
 
 Für die aktuelle Konfiguration des Maxxicharge Systems wird derzeit von Maxxisun keine offizielle
 Schnittstelle (API) zur Verfügung gestellt. Um die Daten trotzdem in HA zu integrieren bietet sich
@@ -44,7 +44,7 @@ Zugehörige Dateien mit weiterer Dokumentation:
 - configuration.yaml
 - z_conf_scrape.yaml
 
-# 3. Ändern der aktuellen Maxxicharge Konfiguration (Inoffiziell)
+## 3. Ändern der aktuellen Maxxicharge Konfiguration (Inoffiziell)
 
 Auch für das Ändern der Maxxicharge Konfiguration wird derzeit von Maxxisun keine offizielle
 Schnittstelle (API) zur Verfügung gestellt. Man kann die Daten aber sehr einfach über HTTP POST
