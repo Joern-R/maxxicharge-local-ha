@@ -2,18 +2,14 @@
 # Hier nur die zu ergänzenden Abschnitte in der "Configuration.Yaml" des spezifischen HA Systems
 
 ################################################################################################
-# Konfiguration für die HA Datenintegration über WebHook
+# 1. Konfiguration der lokalen Integration der Maxxicharge Betriebsdaten (Offiziell)
 
-# 1. Datenintegration (offiziell)
 template: !include z_conf_template.yaml
 
 ################################################################################################
-# Konfiguration für das Auslesen der Maxxicharge Konfiguration aus dem lokalen UI
-
-# 2. Konfigurationsdaten auslesen (inoffiziell)
+# 2. Konfiguration für das Auslesen der Maxxicharge Konfiguration aus dem lokalen UI (Inoffiziell)
 
 
 ################################################################################################
-# Konfiguration für das Ändern Maxxicharge Konfiguration mittels des lokalen UI
+# 3. Konfiguration für das Ändern Maxxicharge Konfiguration mittels des lokalen UI (Inoffiziell)
 
-# 3. Konfigurationsdaten ändern (inoffiziell)
