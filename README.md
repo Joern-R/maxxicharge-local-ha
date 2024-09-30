@@ -25,6 +25,15 @@ Zugehörige Dateien mit weiterer Dokumentation:
 - configuration.yaml
 - z_conf_template.yaml
 
+**Hinweis:** Damit die Daten per Webhook in HA übernommen werden, muss die Funktion auf http://maxxi.local
+aktiviert werden:
+
+- "Cloudservice" auf "Nein"
+- "Lokalen Server nutzen" auf "Ja"
+- "Api-Route" wie in der Anleitung von Maxxisun beschrieben / angepasst an die eigene Konfiguration / eintragen
+
+Wenn nach Änderungen nicht alle erwarteten Felder sichtbar sind: "Browser Refresh" drücken. 
+
 
 ## 2. Auslesen der aktuellen Maxxicharge Konfiguration (Inoffiziell)
 
