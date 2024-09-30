@@ -68,13 +68,13 @@ Zugehörige Dateien mit weiterer Dokumentation:
 
 **Was ist hier nicht dokumentiert:**
 
-Die von den Sensoren (Abschnitt 1.) gelieferten Leistungswerte sind der jeweils aktuelle Wert in W.
+Die von den Sensoren (Abschnitt 1.) gelieferten Leistungswerte sind der aktuelle Wert in W.
 Um diese im Standard Energiedashboard vom HA nutzen zu können, müssen entsprechende "Helper" Entitäten
-mittels "Integratsensor" - (Linkes Riemann Summenintegral) angelegt werden (W -> kWh). Zu dem Thema gibt es diverse
+mittels "Integralsensor" - (Linkes Riemann Summenintegral) angelegt werden (W -> kWh). Zu dem Thema gibt es diverse
 Videos auf YT - auch in deutsch (z.B. HA Youtuber: simon42,...). 
 
 In HA gibt es dann neben den Statistiken des Energiedashboards auch noch Möglichkeiten explizite
-Tages-, Monats-, Jahreswertsummenentitäten anzulegen. Auch dazu ist YT die Empfehlung.
+Tages-, Monats-, Jahreswertsummenentitäten anzulegen. Auch dazu sind die diversen YT Videos zum Thema zu empfehlen.
 
 Und sicher noch viel, viel mehr.
 
