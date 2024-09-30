@@ -55,7 +55,7 @@ Webseite kann sich in zukünfigten CCU Firmwareversionen so ändern, dass der An
 funktioniert.
 
 **Achtung:** Im Unterschied zum Web-UI erfolgt keine Plausibilitäts- oder Grenzwertprüfung des
-des übergebenen Wertes. Dies obliegt dem Aufrufer und evtl. Probleme / Fehler bei der Übergabe
+übergebenen Wertes. Dies obliegt dem Aufrufer und evtl. Probleme / Fehler bei der Übergabe
 ungeeigneter Werte sind daher in alleiniger Verantwortung des Aufrufers der Schnittstelle.
 
 Zugehörige Dateien mit weiterer Dokumentation:
