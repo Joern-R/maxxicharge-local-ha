@@ -32,7 +32,7 @@ aktiviert werden:
 - "Lokalen Server nutzen" auf "Ja"
 - "Api-Route" wie in der Anleitung von Maxxisun beschrieben / angepasst an die eigene Konfiguration / eintragen
 
-Wenn nach Änderungen nicht alle erwarteten Felder sichtbar sind: "Browser Refresh" drücken. 
+Wenn nach Änderungen der (Ja/Nein)-Felder nicht alle erwarteten Eingabefelder sichtbar sind: "Browser Refresh" drücken. 
 
 
 ## 2. Auslesen der aktuellen Maxxicharge Konfiguration (Inoffiziell)
