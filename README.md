@@ -67,6 +67,13 @@ funktioniert.
 übergebenen Wertes. Dies obliegt dem Aufrufer und evtl. Probleme / Fehler bei der Übergabe
 ungeeigneter Werte sind daher in alleiniger Verantwortung des Aufrufers der Schnittstelle.
 
+Ausserdem ist wichtig, dass bei Änderungen im HA und anschließendem Aufruf von http://maxxi.local
+auch wirklich nur http://maxxi.local in der URL im Browser steht. Wurden vorher Änderungen auf
+http://maxxi.local gemacht, so überschreiben diese bei einem Refresh alle Änderungen die auf HA
+gemacht worden sind (da sie nach dem "Aktualisieren" auf http://maxxi.local noch als Query
+Parameter in der URL zu finden sind. (Daran zeigt sich allerdings auch, das der verwendete Weg
+Änderungen in HA zu machen kein offizielles API ist :-) ).
+
 Zugehörige Dateien mit weiterer Dokumentation:
 
 - configuration.yaml
