@@ -25,7 +25,7 @@ Zugehörige Dateien mit weiterer Dokumentation:
 - configuration.yaml
 - z_conf_template.yaml
 
-**Hinweis:** Damit die Daten per Webhook in HA übernommen werden, muss die Funktion auf http://maxxi.local
+**Hinweis:** Damit die Daten per REST Post an den Webhook Endpunkt in HA übernommen werden, muss die Funktion auf http://maxxi.local
 aktiviert werden:
 
 - "Cloudservice" auf "Nein"
