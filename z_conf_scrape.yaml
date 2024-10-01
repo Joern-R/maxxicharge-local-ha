@@ -32,6 +32,12 @@
       unit_of_measurement: "W"
       device_class: power
       icon: mdi:transmission-tower-off
+    - name: "MaxxiCharge1 Konfiguration Lokal - Batterien"
+      unique_id: "MaxxiCharge1_Konf_Lok_Batterien"
+      select: "input"
+      index: 2
+      attribute: value
+      icon: mdi:home-battery
     - name: "MaxxiCharge1 Konfiguration Lokal - Ausgabekorrektur"
       unique_id: "MaxxiCharge1_Konf_Lok_Ausgabekorrektur"
       select: "input"
@@ -66,3 +72,28 @@
       device_class: battery
       state_class: measurement
       icon: mdi:battery
+    - name: "MaxxiCharge1 Konfiguration Lokal - Messgerät"
+      unique_id: "MaxxiCharge1_Konf_Lok_Meter"
+      select: "#meters > option[selected]"
+      icon: mdi:meter-electric-outline
+    - name: "MaxxiCharge1 Konfiguration Lokal - Wechselrichter"
+      unique_id: "MaxxiCharge1_Konf_WR"
+      select: "#microinverterType > option[selected]"
+      icon: mdi:elevator
+    - name: "MaxxiCharge1 Konfiguration Lokal - CCU-Geschwindigkeit"
+      unique_id: "MaxxiCharge1_Konf_CCU_Speed"
+      select: "#ccuSpeed > option[selected]"
+      icon: mdi:speedometer-medium
+    - name: "MaxxiCharge1 Konfiguration Lokal - Cloudservice"
+      unique_id: "MaxxiCharge1_Konf_Lok_Cloud"
+      select: "#offlineMode > option[selected]"
+      icon: mdi:web
+    - name: "MaxxiCharge1 Konfiguration Lokal - Lokaler Server"
+      unique_id: "MaxxiCharge1_Konf_Lok_LServer"
+      select: "#offlineServer > option[selected]"
+      icon: mdi:web-off
+    - name: "MaxxiCharge1 Konfiguration Lokal - API-Route"
+      unique_id: "MaxxiCharge1_Konf_API_Route"
+      select: "#apiDiv > input"
+      attribute: value
+      icon: mdi:lan
