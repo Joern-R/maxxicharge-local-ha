@@ -41,11 +41,11 @@ Für die aktuelle Konfiguration des Maxxicharge Systems wird derzeit von Maxxisu
 Schnittstelle (API) zur Verfügung gestellt. Um die Daten trotzdem in HA zu integrieren bietet sich
 die HA "Scrape" Integration an, mit der man Daten aus Webseiten extrahieren kann. Da die lokale
 Maxxicharge Webseite (http://maxxi.local) keine Authorisierung benötigt und sich nur dann ändern
-kann, wenn sich die Firmware Version ändert, ist die "Scraping" ein relativ verlässlicher Weg
+kann, wenn sich die Firmware Version ändert, ist "Scraping" ein relativ verlässlicher Weg,
 um an die gewünschten Daten zu kommen. 
 
 **Wichtig:** Wenn Maxxisun eine neue Firmware Version bereitstellt und diese vom Kunden
-installiert wird, kann sich die lokale Webseite ändert und die Scraping Funktion damit unbrauchbar
+installiert wird, kann sich die lokale Webseite ändern und die Scraping Funktion damit unbrauchbar
 werden.
 
 Zugehörige Dateien mit weiterer Dokumentation:
