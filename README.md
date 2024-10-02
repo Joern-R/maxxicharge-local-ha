@@ -79,6 +79,87 @@ Zugehörige Dateien mit weiterer Dokumentation:
 - configuration.yaml
 - z_conf_rest_command.yaml
 
+**Weitere Tipps:**
+
+Wenn die "REST" Aufrufe gemäss Konfiguration zu Verfügung stehen müssen folgende weiteren Schritte
+erfolgen, um die änderbaren Feldern in Betrieb zu bekommen:
+
+a) Es müssen "input" "Helfer" Felder in HA erstellt werden. Dies kann per YAML oder per UI in 
+der Konfiguration erfolgen.
+
+YAML Beispiel:
+
+```
+input_number:
+  maxxi_local_max_power:
+    name: MaxxiCharge Lokal Maximale Leistung
+    min: 300
+    max: 1800
+    step: 10
+    mode: box
+    unit_of_measurement: "W"
+    icon: mdi:meter-electric
+  maxxi_local_offline_power:
+    name: MaxxiCharge Lokal Offline Leistung
+    min: 100
+    max: 600
+    step: 10
+    mode: box
+    unit_of_measurement: "W"
+    icon: mdi:transmission-tower-off
+  maxxi_local_min_soc:
+    name: MaxxiCharge Lokal Minimaler Ladestand
+    min: 0
+    max: 100
+    step: 1
+    mode: box
+    unit_of_measurement: "%"
+    icon: mdi:battery
+  maxxi_local_max_soc:
+    name: MaxxiCharge Lokal Maximaler Ladestand
+    min: 0
+    max: 100
+    step: 1
+    mode: box
+    unit_of_measurement: "%"
+    icon: mdi:battery
+```
+Die weiteren Felder habe ich per UI als "Helfer" unter "Einstellungen -> Geräte & Dienste -> Tab "Helfer" erstellt.
+
+b) Bei Änderungen eines der Felder im UI muss der entsprechende "REST" Aufruf per Automatisierung erfolgen (jedenfalls
+habe ich noch keinen anderen Weg gefunden.)
+
+Beispiel YAML für so eine Automatisierung:
+
+```
+alias: MaxxiLocal - Maximale Leistung ändern
+description: Maximale Leistung per REST Call Lokal ändern
+trigger:
+  - platform: state
+    entity_id:
+      - input_number.maxxi_local_max_power
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+condition: []
+action:
+  - data:
+      wert: "{{states(\"input_number.maxxi_local_max_power\")}}"
+    action: rest_command.maxxicharge_maximale_leistung
+mode: single
+```
+
+Analoge Automatisierungen dann für alle anderen UI Felder (wenn man die Daten dort ändern will).
+
+**Use Cases:**
+
+Meiner Meinung nach sind Änderungen per UI aber nur als Test und kleine Spielerei zu sehen.
+Relevant und nützlich sind Änderungen per Automatisierung. Ein Beispiel:
+
+- Setze den "Ausgabe korrigieren" Wert tagsüber (bei guter Solarproduktion) auf einen negativen Wert,
+  um den Netzbezug zu minimieren. Nachts wird der Werte auf eine positiven Wert gesetzt, um die Netzeinspeisung
+  aus dem Speicher zu minimieren.
 
 # Allgemeines
 
