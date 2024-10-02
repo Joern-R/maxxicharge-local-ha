@@ -29,3 +29,9 @@ maxxicharge_maximaler_soc:
 
 maxxicharge_minimaler_soc:
   url: "http://maxxi.local/config?minSOC={{ wert }}"
+
+maxxicharge_ausgabe_korrigieren:
+  url: "http://maxxi.local/config?baseLoad={{ wert }}"
+
+maxxicharge_reaktionstoleranz:
+  url: "http://maxxi.local/config?threshold={{ wert }}"
