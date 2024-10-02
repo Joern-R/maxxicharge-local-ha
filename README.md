@@ -109,15 +109,15 @@ input_number:
     icon: mdi:transmission-tower-off
   maxxi_local_min_soc:
     name: MaxxiCharge Lokal Minimaler Ladestand
-    min: 0
-    max: 100
+    min: 2
+    max: 99
     step: 1
     mode: box
     unit_of_measurement: "%"
     icon: mdi:battery
   maxxi_local_max_soc:
     name: MaxxiCharge Lokal Maximaler Ladestand
-    min: 0
+    min: 10
     max: 100
     step: 1
     mode: box
@@ -125,6 +125,14 @@ input_number:
     icon: mdi:battery
 ```
 Die weiteren Felder habe ich per UI als "Helfer" unter "Einstellungen -> Geräte & Dienste -> Tab "Helfer" erstellt.
+
+**Min/Max Werte:** Die Werte habe ich aus dem Lokalen UI übernommen. Damit ist sichergestellt, dass zumindest bei
+UI Änderungen keine von Maxxisun nicht vorgesehenen Werte eingestellt werden können.
+
+Für die beiden als Helfer angelegten Eingabefelder sind die Werte:
+
+- "Ausgabe korrigieren" min: -500  max: 500
+- "Reaktionstoleranz" min: 3  max: 50
 
 b) Bei Änderungen eines der Felder im UI muss der entsprechende "REST" Aufruf per Automatisierung erfolgen (jedenfalls
 habe ich noch keinen anderen Weg gefunden.)
