@@ -32,6 +32,20 @@ aktiviert werden:
 - "Lokalen Server nutzen" auf "Ja"
 - "Api-Route" wie in der Anleitung von Maxxisun beschrieben / angepasst an die eigene Konfiguration / eintragen
 
+Beispiel:  "http://homeassistant.local:8123/api/webhook/maxxicharge_webhook_id" (ohne die Anführungszeichen).
+Oder generisch:  http://<dein_ha>.local:8123/api/webhook/<deine_webhook_id>
+
+<dein_ha> ist der lokale Name deiner Homeassistant Instanz. Wenn beim beim Default bleibt ist dieser "homeassistant".
+<deine_webhook_id> ist die Id aus dem Konfigurationsfile
+
+**Hinweis:** Homeassistant empfiehlt für Webhook ID einen Namen mit der Qualität eines Passwortes zu verwenden. Im Beispiel
+ist aber ein recht leicht zu erratenden sprechenden Name. Ein kryptischer Webhook Name ist auf jeden Fall notwendig,
+wenn der Webhook von ausserhalb des lokalen Netzwerks aufgerufen werden soll, und der Webhook auch steuernde Funktionen
+für HA hat. Dies ist bei der Integration mit "maxxi.local" beides nicht der Fall. Der Webhook ist als "local" konfiguriert
+und liefert auch "nur" Sensordaten an HA - steuert also nichts Kritisches.
+
+
+
 Wenn nach Änderungen der (Ja/Nein)-Felder nicht alle erwarteten Eingabefelder sichtbar sind: "Browser Refresh" drücken. 
 
 
