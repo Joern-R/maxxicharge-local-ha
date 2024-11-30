@@ -1,6 +1,11 @@
 # maxxicharge-local-ha
 Beispiel für die Integration des lokalen Maxxicharge API mit Homeassistant
 
+# Änderungshistorie
+
+- Das "Release 0.41"  friert den Stand der Dokumentation und Konfiguration für die CCU Firmware 0.41beta und 0.41 ein.
+- Aktueller Stand auf "main" realisiert die Integration mit CCU Firmware 0.42beta
+
 # Ziel
 
 Das OpenSource SmartHome System "Home Assistant" (HA) bietet umfangreiche Optionen
@@ -35,19 +40,14 @@ aktiviert werden:
 Beispiel:  "http://homeassistant.local:8123/api/webhook/maxxicharge_webhook_id" (ohne die Anführungszeichen).
 Oder generisch:  http://<dein_ha>.local:8123/api/webhook/<deine_webhook_id>
 
-<dein_ha> ist der lokale Name deiner Homeassistant Instanz. Wenn beim beim Default bleibt ist dieser "homeassistant".
-<deine_webhook_id> ist die Id aus dem Konfigurationsfile
+- <dein_ha> ist der lokale Name deiner Homeassistant Instanz. Wenn man beim Default bleibt, ist dieser "homeassistant".
+- <deine_webhook_id> ist die Id aus dem Konfigurationsfile
 
-**Hinweis:** Homeassistant empfiehlt für Webhook ID einen Namen mit der Qualität eines Passwortes zu verwenden. Im Beispiel
-ist aber ein recht leicht zu erratenden sprechenden Name. Ein kryptischer Webhook Name ist auf jeden Fall notwendig,
+**Hinweis:** Homeassistant empfiehlt für Webhook IDs einen Namen mit der Qualität eines Passwortes zu verwenden. Im Beispiel
+ist aber ein recht leicht zu erratender sprechender Name verwendet. Ein kryptischer Webhook Name ist auf jeden Fall notwendig,
 wenn der Webhook von ausserhalb des lokalen Netzwerks aufgerufen werden soll, und der Webhook auch steuernde Funktionen
 für HA hat. Dies ist bei der Integration mit "maxxi.local" beides nicht der Fall. Der Webhook ist als "local" konfiguriert
 und liefert auch "nur" Sensordaten an HA - steuert also nichts Kritisches.
-
-
-
-Wenn nach Änderungen der (Ja/Nein)-Felder nicht alle erwarteten Eingabefelder sichtbar sind: "Browser Refresh" drücken. 
-
 
 ## 2. Auslesen der aktuellen Maxxicharge Konfiguration (Inoffiziell)
 
@@ -78,15 +78,8 @@ Webseite kann sich in zukünfigten CCU Firmwareversionen so ändern, dass der An
 funktioniert.
 
 **Achtung:** Im Unterschied zum Web-UI erfolgt keine Plausibilitäts- oder Grenzwertprüfung des
-übergebenen Wertes. Dies obliegt dem Aufrufer und evtl. Probleme / Fehler bei der Übergabe
+übergebenen Wertes. Dies obliegt dem Aufrufer. Evtl. Probleme / Fehler bei der Übergabe
 ungeeigneter Werte sind daher in alleiniger Verantwortung des Aufrufers der Schnittstelle.
-
-Ausserdem ist wichtig, dass bei Änderungen im HA und anschließendem Aufruf von http://maxxi.local
-auch wirklich nur http://maxxi.local in der URL im Browser steht. Wurden vorher Änderungen auf
-http://maxxi.local gemacht, so überschreiben diese bei einem Refresh alle Änderungen die auf HA
-gemacht worden sind (da sie nach dem "Aktualisieren" auf http://maxxi.local noch als Query
-Parameter in der URL zu finden sind. (Daran zeigt sich allerdings auch, das der verwendete Weg
-Änderungen in HA zu machen kein offizielles API ist :-) ).
 
 Zugehörige Dateien mit weiterer Dokumentation:
 
