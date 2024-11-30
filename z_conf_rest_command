@@ -1,5 +1,5 @@
 ######################################################################################################
-# Maxxicharge Lokale Konfiguration via REST POST aktualisieren - FW Release 0.41Beta
+# Maxxicharge Lokale Konfiguration via REST POST aktualisieren - FW Release 0.42Beta
 ######################################################################################################
 
 ######################################################################################################
@@ -7,7 +7,7 @@
 # 1. Es ist hier nur eine Teilmenge der Konfigurationsfelder als REST POST Kommando für HA vorbereitet.
 #    Die aufgeführten Felder orientieren sich daran, welche Felder ggf. durch eine Automatisierung
 #    in HA aus meiner Sicht sinnvoll geändert werden können. Felder, die eher statischen Charakter 
-#    haben oder deren Änderung gravierende Auswrikungen auf den Betrieb des Systems haben, sind 
+#    haben oder deren Änderung gravierende Auswirkungen auf den Betrieb des Systems haben, sind 
 #    hier bewusst nicht zu Änderung angeboten.
 #    Weitere Felder kann man vermutlich in gleicher/ähnlicher Weise aktualisieren (ungetestet).
 #######################################################################################################
@@ -19,19 +19,37 @@
 # Rest POST Kommandos für Wertänderungen über das lokale Maxxicharge UI (used in Automations)
 # ------------------------------------------------------------------------------
 maxxicharge_maximale_leistung:
-  url: "http://maxxi.local/config?maxOutputPower={{ wert }}"
+  url: "http://maxxi.local/config"
+  method: POST
+  content_type: "application/x-www-form-urlencoded"
+  payload: "maxOutputPower={{ wert }}"
 
 maxxicharge_offline_leistung:
-  url: "http://maxxi.local/config?offlinePower={{ wert }}"
+  url: "http://maxxi.local/config"
+  method: POST
+  content_type: "application/x-www-form-urlencoded"
+  payload: "offlinePower={{ wert }}"
 
 maxxicharge_maximaler_soc:
-  url: "http://maxxi.local/config?maxSOC={{ wert }}"
+  url: "http://maxxi.local/config"
+  method: POST
+  content_type: "application/x-www-form-urlencoded"
+  payload: "maxSOC={{ wert }}"
 
 maxxicharge_minimaler_soc:
-  url: "http://maxxi.local/config?minSOC={{ wert }}"
+  url: "http://maxxi.local/config"
+  method: POST
+  content_type: "application/x-www-form-urlencoded"
+  payload: "minSOC={{ wert }}"
 
 maxxicharge_ausgabe_korrigieren:
-  url: "http://maxxi.local/config?baseLoad={{ wert }}"
+  url: "http://maxxi.local/config"
+  method: POST
+  content_type: "application/x-www-form-urlencoded"
+  payload: "baseLoad={{ wert }}"
 
 maxxicharge_reaktionstoleranz:
-  url: "http://maxxi.local/config?threshold={{ wert }}"
+  url: "http://maxxi.local/config"
+  method: POST
+  content_type: "application/x-www-form-urlencoded"
+  payload: "threshold={{ wert }}"
