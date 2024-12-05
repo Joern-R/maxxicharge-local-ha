@@ -4,7 +4,7 @@ Beispiel für die Integration des lokalen Maxxicharge API mit Homeassistant
 # Änderungshistorie
 
 - Das Release "CCU-FW 0.41"  friert den Stand der Dokumentation und Konfiguration für die CCU Firmware 0.41beta bzw. 0.41 ein.
-- Aktueller Stand auf "main" realisiert die Integration mit CCU Firmware 0.42beta.
+- Aktueller Stand auf "main" realisiert die Integration mit CCU Firmware 0.42beta und 0.43beta.
 
 # Ziel
 
