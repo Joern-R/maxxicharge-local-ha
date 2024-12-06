@@ -37,7 +37,7 @@ aktiviert werden:
 - "Lokalen Server nutzen" auf "Ja"
 - "Api-Route" wie in der Anleitung von Maxxisun beschrieben / angepasst an die eigene Konfiguration / eintragen
 
-Beispiel:  "http://homeassistant.local:8123/api/webhook/maxxicharge_webhook_id" (ohne die Anführungszeichen).
+Beispiel:  "http://homeassistant.local:8123/api/webhook/maxxicharge_local_id" (ohne die Anführungszeichen).
 Oder generisch:  http://<dein_ha>.local:8123/api/webhook/<deine_webhook_id>
 
 - <dein_ha> ist der lokale Name deiner Homeassistant Instanz. Wenn man beim Default bleibt, ist dieser "homeassistant".
