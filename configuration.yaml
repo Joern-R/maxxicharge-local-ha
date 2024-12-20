@@ -1,3 +1,20 @@
+# Empfehlung für den Start - Log Level erhöhen
+
+# Um detaillierte Informationen über das HA System beim Start und im Betrieb zu bekommen und
+# evtl. Probleme leichter zu identifizieren ist meine Empfehlung das Log-Level auf "Info" zu
+# erhöhen. Dies sorgt für die maximalen Detailgrad in der .log Datei des Homeassistant.
+# Wenn alles fehlerfrei läuft und jemand evtl. zu wenig Speicherplatz in seinem System hat,
+# kann man das Log-Level entweder reduzieren. Oder die Konfiguration wieder löschen und so zum
+# Default Wert zurückkehren.
+
+################################################################################################
+
+
+
+logger:
+  default: info
+
+
 
 # Hier nur die zu ergänzenden Abschnitte in der "Configuration.Yaml" des spezifischen HA Systems
 
