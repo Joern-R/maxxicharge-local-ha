@@ -39,20 +39,22 @@ aktiviert werden:
 - "Api-Route" wie in der Anleitung von Maxxisun beschrieben / angepasst an die eigene Konfiguration / eintragen
 
 ### API-Route
-Beispiel:  
-- `http://homeassistant.local:8123/api/webhook/maxxicharge_local_id`
-
-Oder generisch:
+**Generisch:**
 - `http://<dein_ha>.local:8123/api/webhook/<deine_webhook_id>`
-
-Oder mit IP-Adresse:
+  
+**Oder mit IP-Adresse statt lokalem Namen:**
 - `http://<IP-Adresse>:8123/api/webhook/<deine_webhook_id>`
 
-Erklärung:
+**Erklärung:**
 - `<dein_ha>` ist der lokale Name deiner Homeassistant Instanz. Wenn man beim Default bleibt, ist dieser "homeassistant".
 - `<IP-Adresse>` ist die IP-Adresse deiner Homeassistant Instantz im lokalen Netzwerk (die direkte Eingabe der IP-Adresse ist immer
 dann notwendig, wenn sich Homeassistant NICHT über die http://<dein_ha>.local:8123 URL lokal aufrufen lässt.
 - `<deine_webhook_id>` ist die Id aus dem Konfigurationsfile
+
+**Beispiel bei Nutzung des standardmässigen Homeassistant URL Namens:**
+  
+- `http://homeassistant.local:8123/api/webhook/maxxicharge_local_id`
+
 
 **Hinweis:** Homeassistant empfiehlt für Webhook IDs einen Namen mit der Qualität eines Passwortes zu verwenden. Im Beispiel
 ist aber ein recht leicht zu erratender sprechender Name verwendet. Ein kryptischer Webhook Name ist auf jeden Fall notwendig,
