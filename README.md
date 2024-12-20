@@ -50,7 +50,7 @@ Oder mit IP-Adresse:
 
 Erklärung:
 - `<dein_ha>` ist der lokale Name deiner Homeassistant Instanz. Wenn man beim Default bleibt, ist dieser "homeassistant".
-- `<IP-Adresse>` ist die IP-Adresse deiner Homeassistant Instantz im lokalen Netzwerk (die Nutzung der IP-Adresse ist immer
+- `<IP-Adresse>` ist die IP-Adresse deiner Homeassistant Instantz im lokalen Netzwerk (die direkte Eingabe der IP-Adresse ist immer
 dann notwendig, wenn sich Homeassistant NICHT über die http://<dein_ha>.local:8123 URL lokal aufrufen lässt.
 - `<deine_webhook_id>` ist die Id aus dem Konfigurationsfile
 
