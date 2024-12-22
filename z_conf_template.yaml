@@ -4,9 +4,11 @@
 
 ######################################################################################################
 # Hinweise
-# 1. Die unten verwendete WebHook ID ist ein Beispiel und kann beliebig geändert werden die API-Route,
+# 1. Die unten verwendete WebHook ID ist ein Beispiel und kann beliebig geändert werden. Die API-Route,
 #    mit der Id wäre dann "http://homeassistant.local:8123/api/webhook/maxxicharge_local_id" wenn Ihr
-#    den URL eures Homeassistant System nicht geändert habt, ansonsten ist dies entsprechend anzupassen.
+#    die URL eures Homeassistant System nicht geändert habt, ansonsten ist dies entsprechend anzupassen.
+#    Wenn sich der Homeassistant nicht über die .local URL, sondern nur über die IP Adresse aufrufen
+#    lässt muss in der URL natürlich auch die IP Adresse verwendet werden.
 # 2. In der Homeassistant Dokumentation wird für den WebHook Namen grundsätzlich eine nicht leicht
 #    zu erratenden Buchstaben/Zahlenkombination empfohlen. Hier im Beispiel wurde aus Gründen besserer
 #    Lesbarkeit eine einfacher Name gewählt 
