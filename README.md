@@ -60,7 +60,8 @@ dann notwendig, wenn sich Homeassistant NICHT über die http://<dein_ha>.local:8
 ist aber ein recht leicht zu erratender sprechender Name verwendet. Ein kryptischer Webhook Name ist auf jeden Fall notwendig,
 wenn der Webhook von ausserhalb des lokalen Netzwerks aufgerufen werden soll, und der Webhook auch steuernde Funktionen
 für HA hat. Dies ist bei der Integration mit "maxxi.local" beides nicht der Fall. Der Webhook ist als "local" konfiguriert
-und liefert auch "nur" Sensordaten an HA - steuert also nichts Kritisches.
+und liefert auch "nur" Sensordaten an HA - steuert also nichts Kritisches. Im übrigen kann ja jeder Anwender einen "kryptischen"
+WebHook Namen verwenden - der muss dann allerdings an beiden Stellen (maxxi.local Konfiguration) und HA Konfiguration identisch sein.
 
 ## 2. Auslesen der aktuellen Maxxicharge Konfiguration (Inoffiziell)
 
