@@ -14,52 +14,52 @@
 - resource: http://maxxi.local
   scan_interval: 60
   sensor:
-    - name: "MaxxiCharge1 Konfiguration Lokal - Meter IP"
-      unique_id: "MaxxiCharge1_Konf_Lok_Meter_IP"
+    - name: "Maxxicharge1 Konfiguration Lokal - Meter IP"
+      unique_id: "Maxxicharge1_Konf_Lok_Meter_IP"
       select: "input"
       index: 0
       attribute: value
       icon: mdi:ip
-    - name: "MaxxiCharge1 Konfiguration Lokal - Maximale Leistung"
-      unique_id: "MaxxiCharge1_Konf_Lok_Max_Leistung"
+    - name: "Maxxicharge1 Konfiguration Lokal - Maximale Leistung"
+      unique_id: "Maxxicharge1_Konf_Lok_Max_Leistung"
       select: "input"
       index: 1
       attribute: value
       unit_of_measurement: "W"
       device_class: power
       icon: mdi:meter-electric
-    - name: "MaxxiCharge1 Konfiguration Lokal - Offline Leistung"
-      unique_id: "MaxxiCharge1_Konf_Lok_Offline_Leistung"
+    - name: "Maxxicharge1 Konfiguration Lokal - Offline Leistung"
+      unique_id: "Maxxicharge1_Konf_Lok_Offline_Leistung"
       select: "input"
       index: 2
       attribute: value
       unit_of_measurement: "W"
       device_class: power
       icon: mdi:transmission-tower-off
-    - name: "MaxxiCharge1 Konfiguration Lokal - Batterien"
-      unique_id: "MaxxiCharge1_Konf_Lok_Batterien"
+    - name: "Maxxicharge1 Konfiguration Lokal - Batterien"
+      unique_id: "Maxxicharge1_Konf_Lok_Batterien"
       select: "input"
       index: 3
       attribute: value
       icon: mdi:home-battery
-    - name: "MaxxiCharge1 Konfiguration Lokal - Ausgabekorrektur"
-      unique_id: "MaxxiCharge1_Konf_Lok_Ausgabekorrektur"
+    - name: "Maxxicharge1 Konfiguration Lokal - Ausgabekorrektur"
+      unique_id: "Maxxicharge1_Konf_Lok_Ausgabekorrektur"
       select: "input"
       index: 4
       attribute: value
       unit_of_measurement: "W"
       device_class: power
       icon: mdi:delta
-    - name: "MaxxiCharge1 Konfiguration Lokal - Reaktionstoleranz"
-      unique_id: "MaxxiCharge1_Konf_Lok_Reak_Toleranz"
+    - name: "Maxxicharge1 Konfiguration Lokal - Reaktionstoleranz"
+      unique_id: "Maxxicharge1_Konf_Lok_Reak_Toleranz"
       select: "input"
       index: 5
       attribute: value
       unit_of_measurement: "W"
       device_class: power
       icon: mdi:vector-difference
-    - name: "MaxxiCharge1 Konfiguration Lokal - Minimale Ladung"
-      unique_id: "MaxxiCharge1_Konf_Lok_Min_SoC"
+    - name: "Maxxicharge1 Konfiguration Lokal - Minimale Ladung"
+      unique_id: "Maxxicharge1_Konf_Lok_Min_SoC"
       select: "input"
       index: 6
       attribute: value
@@ -67,8 +67,8 @@
       device_class: battery
       state_class: measurement
       icon: mdi:battery
-    - name: "MaxxiCharge1 Konfiguration Lokal - Maximale Ladung"
-      unique_id: "MaxxiCharge1_Konf_Lok_Max_SoC"
+    - name: "Maxxicharge1 Konfiguration Lokal - Maximale Ladung"
+      unique_id: "Maxxicharge1_Konf_Lok_Max_SoC"
       select: "input"
       index: 7
       attribute: value
@@ -76,36 +76,36 @@
       device_class: battery
       state_class: measurement
       icon: mdi:battery
-    - name: "MaxxiCharge1 Konfiguration Lokal - Auto Discovery Messgerät"
-      unique_id: "MaxxiCharge1_Konf_Lok_Meter_Auto"
+    - name: "Maxxicharge1 Konfiguration Lokal - Auto Discovery Messgerät"
+      unique_id: "Maxxicharge1_Konf_Lok_Meter_Auto"
       select: "#meters > option[selected]"
       icon: mdi:meter-electric-outline
-    - name: "MaxxiCharge1 Konfiguration Lokal - Manuell Gewähltes Messgerät"
-      unique_id: "MaxxiCharge1_Konf_Lok_Meter_Manu"
+    - name: "Maxxicharge1 Konfiguration Lokal - Manuell Gewähltes Messgerät"
+      unique_id: "Maxxicharge1_Konf_Lok_Meter_Manu"
       select: "#powerMeterType > option[selected]"
       icon: mdi:meter-electric-outline
-    - name: "MaxxiCharge1 Konfiguration Lokal - DC/DC Algorithmus"
-      unique_id: "MaxxiCharge1_Konf_DC_Algorithm"
+    - name: "Maxxicharge1 Konfiguration Lokal - DC/DC Algorithmus"
+      unique_id: "Maxxicharge1_Konf_DC_Algorithm"
       select: "#dcAlgorithm > option[selected]"
       icon: mdi:current-dc
-    - name: "MaxxiCharge1 Konfiguration Lokal - Wechselrichter"
-      unique_id: "MaxxiCharge1_Konf_WR"
+    - name: "Maxxicharge1 Konfiguration Lokal - Wechselrichter"
+      unique_id: "Maxxicharge1_Konf_WR"
       select: "#microinverterType > option[selected]"
       icon: mdi:elevator
-    - name: "MaxxiCharge1 Konfiguration Lokal - CCU-Geschwindigkeit"
-      unique_id: "MaxxiCharge1_Konf_CCU_Speed"
+    - name: "Maxxicharge1 Konfiguration Lokal - CCU-Geschwindigkeit"
+      unique_id: "Maxxicharge1_Konf_CCU_Speed"
       select: "#ccuSpeed > option[selected]"
       icon: mdi:speedometer-medium
-    - name: "MaxxiCharge1 Konfiguration Lokal - Cloudservice"
-      unique_id: "MaxxiCharge1_Konf_Lok_Cloud"
+    - name: "Maxxicharge1 Konfiguration Lokal - Cloudservice"
+      unique_id: "Maxxicharge1_Konf_Lok_Cloud"
       select: "#offlineMode > option[selected]"
       icon: mdi:web
-    - name: "MaxxiCharge1 Konfiguration Lokal - Lokaler Server"
-      unique_id: "MaxxiCharge1_Konf_Lok_LServer"
+    - name: "Maxxicharge1 Konfiguration Lokal - Lokaler Server"
+      unique_id: "Maxxicharge1_Konf_Lok_LServer"
       select: "#offlineServer > option[selected]"
       icon: mdi:web-off
-    - name: "MaxxiCharge1 Konfiguration Lokal - API-Route"
-      unique_id: "MaxxiCharge1_Konf_API_Route"
+    - name: "Maxxicharge1 Konfiguration Lokal - API-Route"
+      unique_id: "Maxxicharge1_Konf_API_Route"
       select: "#apiDiv > input"
       attribute: value
       icon: mdi:lan
