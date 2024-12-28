@@ -66,7 +66,7 @@ WebHook Namen verwenden - der muss dann allerdings an beiden Stellen (maxxi.loca
 ## 2. Auslesen der aktuellen Maxxicharge Konfiguration (Inoffiziell)
 
 Für die aktuelle Konfiguration des Maxxicharge Systems wird derzeit von Maxxisun keine offizielle
-Schnittstelle (API) zur Verfügung gestellt. Um die Daten trotzdem in HA zu integrieren bietet sich
+Schnittstelle (API) zur Verfügung gestellt. Um die Daten trotzdem in HA zu integrieren, bietet sich
 die HA "Scrape" Integration an, mit der man Daten aus Webseiten extrahieren kann. Da die lokale
 Maxxicharge Webseite (http://maxxi.local) keine Authorisierung benötigt und sich nur dann ändern
 kann, wenn sich die Firmware Version ändert, ist "Scraping" ein relativ verlässlicher Weg,
