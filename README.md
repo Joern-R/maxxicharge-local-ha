@@ -6,6 +6,14 @@ Beispiel für die Integration des lokalen Maxxicharge API mit Homeassistant
 - 29.11.2024: Das Release "CCU-FW 0.41"  friert den Stand der Dokumentation und Konfiguration für die CCU Firmware 0.41beta bzw. 0.41 ein.
 - 30.11.2024: Aktueller Stand auf "main" realisiert die Integration mit CCU Firmware 0.42beta und 0.43beta.
 - 20.12.2024: Configuration.Yaml um Log-Level "Info" ergänzt um Problemsuche zu vereinfachen
+- 12.01.2025: Disclaimer aktualisiert und an den Anfang gerückt - keine inhaltlichen Änderungen
+
+# Disclaimer:
+🚨 Die Beschreibung der Integration ist eine unabhängige Community Lösung und steht in keiner Beziehung zu Maxxisun. Alle Marken- oder Produktmarken sind Eigentum des jeweiligen Firmen/Personen. 🚨
+
+🚨 Die Nutzung der Konfiguration(en) erfolgt auf eigene Verantwortung und ohne die implizite oder explizite Zusicherung von bestimmten Eigenschaften und Funktionalitäten, sowie ohne Gewähr und Support.
+Der Anwender trägt das Risiko eines mögliche Verlustes der Herstellergarantie sowie möglichen Schäden am Gerät durch unsachgemässe Nutzung und/oder Konfiguration. 🚨
+
 
 # Ziel
 
@@ -204,10 +212,7 @@ Tages-, Monats-, Jahreswertsummenentitäten anzulegen. Auch dazu sind die divers
 
 Und sicher noch viel, viel mehr.
 
-**Disclaimer:**
-
-Die Nutzung der Konfiguration erfolgt auf eigene Verantwortung und ohne die implizite oder explizite
-Zusicherung von bestimmten Eigenschaften und Funktionalitäten, sowie ohne Gewähr und Support.
+**Über mich:**
 
 Ich bin selbst relativ neu mit dem Homeassistant SmartHome System unterwegs. Die Realisierung der Anbindung
 ist daher möglicherweise nicht konform zu Homeassistant "Best Practices". Weiterhin nutze ich nur Standardkonfigurationsmethoden.
