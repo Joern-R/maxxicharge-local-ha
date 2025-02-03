@@ -59,7 +59,7 @@ aktiviert werden:
 dann notwendig, wenn sich Homeassistant NICHT über die http://<dein_ha>.local:8123 URL lokal aufrufen lässt.
 - `<deine_webhook_id>` ist die Id aus dem Konfigurationsfile
 
-  Hier der passende Ausschnitt aus dem Konfigurationsfile "z_conf_template.yaml" wo die Webhook-ID festgelegt wird: 
+  Hier der zugehörige Ausschnitt aus dem Konfigurationsfile "z_conf_template.yaml" wo die Webhook-ID festgelegt wird: 
 
 ``` - trigger:
     - platform: webhook
@@ -69,10 +69,8 @@ dann notwendig, wenn sich Homeassistant NICHT über die http://<dein_ha>.local:8
 ```  
 
 **Beispiel bei Nutzung des standardmässigen Homeassistant URL Namens:**
-  
-- `http://homeassistant.local:8123/api/webhook/maxxicharge_local_id`
 
-und der Webhook-ID die im im Vorschlag der "z_conf_template.yaml" hinterlegt ist.
+und der Webhook-ID, die im Vorschlag der "z_conf_template.yaml" hinterlegt ist.
 
 ```- trigger:
     - platform: webhook
@@ -80,6 +78,24 @@ und der Webhook-ID die im im Vorschlag der "z_conf_template.yaml" hinterlegt ist
       allowed_methods: [POST]
       local_only: true
 ```
+
+Die in maxx.local einzutragenden API-Route ist dann:
+
+- `http://homeassistant.local:8123/api/webhook/maxxicharge_local_id`
+
+Umgekehrt - Wenn man als API-Route z.B.
+
+- `http://homeassistant.local:8123/api/webhook/maxxicharge_a1c3x1-355` 
+
+verwenden möchte, muss man die Zeile "webhook_id" in  "z_conf_template.yaml" wie folgt anpassen:
+
+```- trigger:
+    - platform: webhook
+      webhook_id: maxxicharge_a1c3x1-355
+      allowed_methods: [POST]
+      local_only: true
+```
+
 
 **Hinweis:** Homeassistant empfiehlt für Webhook IDs einen Namen mit der Qualität eines Passwortes zu verwenden. Im Beispiel
 ist aber ein recht leicht zu erratender sprechender Name verwendet. Ein kryptischer Webhook Name ist auf jeden Fall notwendig,
