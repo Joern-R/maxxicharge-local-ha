@@ -89,9 +89,33 @@
         mdi:battery-{{ (trigger.json.SOC | int(0) / 10) | round(0, 0, 0) * 10 }}
       state: "{{ trigger.json.SOC }}"
       unit_of_measurement: "%"
-    # Battery state of chargen in Wh
+    # Battery state of charge in Wh (Battery 1)
     - name: "Maxxicharge1 Ladestand Detail"
       unique_id: "Maxxicharge1-LadestandDetail"
       icon: mdi:file-document-outline
       unit_of_measurement: "Wh"
       state: "{{ trigger.json.batteriesInfo[0].batteryCapacity | float (0) | round(3)}}"
+    
+    # Falls mehr als eine Batterie an der CCU angeschlossen ist, werden weitere Detaildaten 
+    # geliefert - diese müssen als eigene Sensoren in der nachfolgend dokumentierten Form
+    # in der Konfiguration definiert werden.
+
+    # Um Systeme mit nur einer Batterie nicht zu stören, sind ist die Konfiguration der 
+    # bespielhaft aufgeführten Konfiguration für Batterie 2 und Batterie 3 hier "auskommentiert"
+    # und kann bei Bedarf durch Entfernung des Kommentarzeichens "#" aktiviert werden.
+    # Dabei bitte auf korrekte Einrückungen achten.
+
+    # Battery state of charge in Wh (Battery 2)
+    #- name: "Maxxicharge1 Ladestand Detail 2"
+    #  unique_id: "Maxxicharge1-LadestandDetail2"
+    #  icon: mdi:file-document-outline
+    #  unit_of_measurement: "Wh"
+    #  state: "{{ trigger.json.batteriesInfo[1].batteryCapacity | float (0) | round(3)}}"
+    # Battery state of charge in Wh (Battery 3)
+    #- name: "Maxxicharge1 Ladestand Detail 3"
+    #  unique_id: "Maxxicharge1-LadestandDetail3"
+    #  icon: mdi:file-document-outline
+    #  unit_of_measurement: "Wh"
+    #  state: "{{ trigger.json.batteriesInfo[2].batteryCapacity | float (0) | round(3)}}"
+
+      
