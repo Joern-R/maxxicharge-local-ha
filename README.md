@@ -80,7 +80,7 @@ und der Webhook-ID, die im Vorschlag der "z_conf_template.yaml" hinterlegt ist.
       local_only: true
 ```
 
-Die in maxx.local einzutragenden API-Route ist dann:
+Die in auf der Seite "maxxi.local" einzutragende API-Route ist dann:
 
 - `http://homeassistant.local:8123/api/webhook/maxxicharge_local_id`
 
