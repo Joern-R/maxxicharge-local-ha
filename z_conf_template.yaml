@@ -25,7 +25,7 @@
 
 
 - trigger:
-    - platform: webhook
+    - trigger: webhook
       webhook_id: maxxicharge_local_id
       allowed_methods: [POST]
       local_only: true
