@@ -7,7 +7,8 @@ Beispiel für die Integration des lokalen Maxxicharge API mit Homeassistant
 - 30.11.2024: Aktueller Stand auf "main" realisiert die Integration mit CCU Firmware 0.42beta und 0.43beta.
 - 20.12.2024: Configuration.Yaml um Log-Level "Info" ergänzt um Problemsuche zu vereinfachen
 - 12.01.2025: Disclaimer aktualisiert und an den Anfang gerückt - keine inhaltlichen Änderungen
-- 25.02.2025: "z_conf_tempate.yaml" um "auskommentierte" Sensoren für weitere Batterien ergänzt
+- 25.02.2025: "z_conf_template.yaml" um "auskommentierte" Sensoren für weitere Batterien ergänzt
+- 11.04.2025: "z_conf_template.yaml" Syntax bei Webhook aktualisiert (alte und neue Syntax funktioniert in HA) - bei Interesse DIFF anschauen
 
 # Disclaimer:
 🚨 Die Beschreibung der Integration ist eine unabhängige Community Lösung und steht in keiner Beziehung zu Maxxisun. Alle Marken- oder Produktmarken sind Eigentum des jeweiligen Firmen/Personen. 🚨
