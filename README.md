@@ -3,6 +3,7 @@ Beispiel für die Integration des lokalen Maxxicharge API mit Homeassistant
 
 # Änderungshistorie
 
+- 04.06.2025: Limitation für "SSL/TLS" gesicherte HA Instanzen ergänzt.
 - 29.11.2024: Das Release "CCU-FW 0.41"  friert den Stand der Dokumentation und Konfiguration für die CCU Firmware 0.41beta bzw. 0.41 ein.
 - 30.11.2024: Aktueller Stand auf "main" realisiert die Integration mit CCU Firmware 0.42beta und 0.43beta.
 - 20.12.2024: Configuration.Yaml um Log-Level "Info" ergänzt um Problemsuche zu vereinfachen
@@ -105,6 +106,13 @@ wenn der Webhook von ausserhalb des lokalen Netzwerks aufgerufen werden soll, un
 für HA hat. Dies ist bei der Integration mit "maxxi.local" beides nicht der Fall. Der Webhook ist als "local" konfiguriert
 und liefert auch "nur" Sensordaten an HA - steuert also nichts Kritisches. Im übrigen kann ja jeder Anwender einen "kryptischen"
 WebHook Namen verwenden - der muss dann allerdings an beiden Stellen (maxxi.local Konfiguration) und HA Konfiguration identisch sein.
+
+**Bekannte Limitationen:** Nach aktuellem Stand funktioniert die Integration (in der beschriebenen Weise) in folgenden Fällen nicht:
+
+- Die Homeassistant Instanz ist nur über SSL/TLS-Protokoll - sprich per"https" URL - erreichbar. Wenn jemand dies verwendet und eine 
+Lösung für diese Limitation hat, bitte die Beschreibung der Lösung z.B. per GitHub Issue oder per Pull-Request hier ergänzen.
+
+
 
 ## 2. Auslesen der aktuellen Maxxicharge Konfiguration (Inoffiziell)
 
