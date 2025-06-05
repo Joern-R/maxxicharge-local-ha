@@ -1,3 +1,18 @@
+# WICHTIGE NEUIGKEITEN - BITTE LESEN
+
+Seit heute gibt es von einem anderen Anwender der Community eine HACS basierte Integration des Maxxicharge in Homeassistant.
+Diese findet Ihr unter: 
+
+https://github.com/mephdrac/MaxxiChargeConnect
+
+Diese deckt aktuell die Funktionalität des Abschnitts "1. Lokale Integration der Maxxicharge Betriebsdaten (Offiziell)" ab.
+
+Grundsätzlich ist diese Art von Integration - insbesondere hinsichtlich der einfacheren Updates bei Weiterentwicklungen
+gegenüber den Änderungen in den "configuration.yaml", usw. zu bevorzugen. Inwieweit es möglich ist, von der .yaml basierten
+Konfiguration auf die HACS Lösung "umzusteigen" muss noch geprüft werden. Da jetzt eine HACS basierte Lösung existiert,
+sollte dies aber die Basis für alle Weiterentwicklungen - insbesondere in Hinsicht auf die CCU V2 werden.
+
+
 # maxxicharge-local-ha
 Beispiel für die Integration des lokalen Maxxicharge API mit Homeassistant
 
