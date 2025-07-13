@@ -5,7 +5,8 @@ Diese findet Ihr unter:
 
 https://github.com/mephdrac/MaxxiChargeConnect
 
-Diese deckt aktuell die Funktionalität des Abschnitts "1. Lokale Integration der Maxxicharge Betriebsdaten (Offiziell)" ab.
+Diese deckt die gesamte hier beschriebenen Funktionalität ab - und bietet auch Funktionen an, die vorhandenen Sensoren (wie hier definiert)
+in die neuen Sensoren der HACS Integration zu migrieren.
 
 Grundsätzlich ist diese Art von Integration - insbesondere hinsichtlich der einfacheren Updates bei Weiterentwicklungen
 gegenüber den Änderungen in den "configuration.yaml", usw. zu bevorzugen. Inwieweit es möglich ist, von der .yaml basierten
